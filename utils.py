@@ -34,3 +34,7 @@ def get_sentence(liste, lookup):
     for wort in liste:
         satz += lookup["i2w"][wort] + " "
     return satz
+
+
+def generate_key(keylist):
+    return ",".join([str(k) for k in keylist])
