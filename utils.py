@@ -3,7 +3,7 @@ import random
 class Markov():
     def __init__(self, dictionary):
         self.dictionary = dictionary
-        self.back = len(dictionary.keys()[0])
+        self.back = len(list(dictionary.keys())[0])
 
     def generate(self, start="0"):
         key = self.back*"<,"[:-1]
